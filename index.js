@@ -1,11 +1,11 @@
 
 console.log("Hello D&D nerds");
 
-const cheer = () => {
-    console.log('D&D nerds')}
+const cheer = (name='D&D nerds') => {
+    console.log(name)}
 
 const future = () =>{
-console.log("My horoscope sign is blabla")}
+console.log("My horoscope sign is unknown")}
 
 export function count(myAgeIhope) {
     console.log(myAgeIhope)
