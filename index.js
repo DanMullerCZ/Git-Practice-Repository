@@ -14,3 +14,7 @@ export function count(myAgeIhope) {
 export function greet2(name, age) {
     console.log(`Hello ${name}, ${age} old`)
 }
+
+export function func(param, otherparam){
+    return (param, otherparam)
+}
