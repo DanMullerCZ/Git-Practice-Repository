@@ -7,8 +7,8 @@ const cheer = () => {
 const future = () =>{
 console.log("My horoscope sign is taurus")}
 
-function count(myAge) {
-    console.log(myAge)
+export function count(myAgeIhope) {
+    console.log(myAgeIhope)
 }
 
 export function greet2(name) {
