@@ -12,7 +12,7 @@ export function count(myAgeIhopeNow, myFutureAge) {
 }
 
 export function greet2(name, age, sex) {
-    console.log(`Hello ${name}, ${age} years old, humiliating population of ${sex}`)
+    console.log(`Greetings for the ${name}, ${age} years old, humiliating population of ${sex}`)
 }
 
 export function func(param, otherparam){
