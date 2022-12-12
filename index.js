@@ -2,7 +2,7 @@
 console.log("Hello D&D nerds");
 
 const cheer = (arg) => {
-    console.log(`Cheer for the ${arg}`)}
+    console.log(`Cheer for the ${arg}, hej hej`)}
 
 (async()=>{const future = (param1,param2) =>{
 console.log(param1,param2)}})
