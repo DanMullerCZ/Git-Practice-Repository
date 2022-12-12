@@ -4,8 +4,8 @@ console.log("Hello D&D nerds");
 const cheer = (name='D&D nerds') => {
     console.log(name)}
 
-const future = () =>{
-console.log("My horoscope sign is unknown")}
+(async()=>{const future = (param1,param2) =>{
+console.log(param1,param2)}})
 
 export function count(myAgeIhope) {
     console.log(myAgeIhope)
