@@ -1,10 +1,8 @@
 
 console.log("Hello D&D nerds");
 
-const cheer = (name='D&D nerds',team=['kuba','adam','petr','dan','luky']) => {
-    console.log(name,team)}
-
-
+const cheer = (arg) => {
+    console.log(`Cheer for the ${arg}`)}
 
 
 const future = (param) =>{
