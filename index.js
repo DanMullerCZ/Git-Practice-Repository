@@ -8,7 +8,7 @@ const future = () =>{
 console.log("My horoscope sign is unknown")}
 
 export function count(myAgeIhope) {
-    console.log(myAgeIhope)
+    console.log(`Counting the countless ${myAgeIhope}`)
 }
 
 export function greet2(name, age) {
