@@ -21,16 +21,11 @@ or
     var person = Person.Get(Person.Properties.Id == 10);
 
 What is a model?
-    Representation of specific entity in our app from database. 
+    Representation of specific entity in our app from table in database. 
     Example is:
-        model coments {
-            // Fields
-        }
-
-        model Comment {
-            // Fields
-
-            @@map("comments")
+        model User {
+            id Int @id @default(autoincrement())
+            name String
         }
 
 What is a migration?
@@ -51,6 +46,15 @@ What is Prisma schema and how does the schema work?
 
 Prisma CLI workflow
     Primary way to command prisma.
+        npm init -y
+        npm install prisma -> install Prisma to our app
+        npx prisma init -> initiliaze Prisma project
+
+        npx prisma db pull -> automaticly creates models from provided database
+
+        npx prisma generate -> creates Prisma Client to query our database
+
+        npx prisma migrate -> saves our changes from Prisma into database
 
 Prisma Studio
     Visual editor for the data in your database
@@ -74,3 +78,6 @@ Example:
         },
     },
     })
+
+
+!!!! Install Prisma VS Code extension if you want to have nicer schema.prisma
