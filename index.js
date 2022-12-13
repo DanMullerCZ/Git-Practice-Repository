@@ -2,7 +2,7 @@
 console.log("Hello D&D nerds");
 
 const cheer = (arg) => {
-    console.log(`Cheer for the ${arg}`)}
+    console.log(`Cheer for the ${arg}, hej hej`)}
 
 
 const future = (param) =>{
