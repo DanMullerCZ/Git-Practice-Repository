@@ -1,0 +1,76 @@
+What is ORM?
+    Object–relational mapping -> enables "virtual object database" in OOP from 
+    relational database. Example: SQL stores data as numbers and string in tables
+    and we cannot access that in our programming language. ORM changes selected 
+    table into object, which we can access more easily.
+
+
+Why ORM?
+    var sql = "SELECT id, first_name, last_name, phone, birth_date, 
+                                sex, age FROM persons WHERE id = 10";
+    var result = conn.querry(sql, (res, err) => ...)
+    var name = result[0]["first_name"];
+
+or
+
+    var person = repository.GetPerson(10);
+    var firstName = person.GetFirstName();
+
+    or 
+
+    var person = Person.Get(Person.Properties.Id == 10);
+
+What is a model?
+    Representation of specific entity in our app from database. 
+    Example is:
+        model coments {
+            // Fields
+        }
+
+        model Comment {
+            // Fields
+
+            @@map("comments")
+        }
+
+What is a migration?
+    Process of traveling data between systems
+
+What is Prisma schema and how does the schema work?
+    That is file 'schema.prisma' for initial configuration 
+    and consists of:
+    Data sources -> Specifies which databse will be our 
+                    data source and connects to it
+
+    Generators -> Specifies what clients will be used for 
+                  communication between source and app
+
+    Data model definition -> Specifies our models to match with data 
+                             from data source
+    
+
+Prisma CLI workflow
+    Primary way to command prisma.
+
+Prisma Studio
+    Visual editor for the data in your database
+
+
+Example: 
+    import { PrismaClient } from '@prisma/client'
+
+    const prisma = new PrismaClient()
+
+    const allUsers = await prisma.user.findMany({
+    include: { posts: true },
+    })
+
+    const user = await prisma.user.create({
+    data: {
+        name: 'Alice',
+        email: 'alice@prisma.io',
+        posts: {
+        create: { title: 'Join us for Prisma Day 2020' },
+        },
+    },
+    })
